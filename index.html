@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 960px;
+            height: 100vh;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: auto;
+            background-color: lightgray;
+            font-family: sans-serif;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 20px;
+            margin: 0;
+            padding-top: 20px;
+        }
+        #main-container {
+            display: grid;
+            grid-template-columns: repeat(5,160px);
+            grid-template-rows: repeat(2, 160px);
+            gap: 20px;
+            justify-content: center;
+        }
+        #container {
+            display: grid;
+            width: 160px;
+            height: 160px;
+            background-color: lightblue;
+            align-items: center;
+            justify-items: center;
+            border-radius: 10px;
+
+        }
+        #container::after {
+            content: "Item Gallery";
+            width: 100%;
+            text-align: center;
+            align-self: end;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #main-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            #main-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (max-width: 414px) {
+            #main-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        </style>
+</head>
+<body>
+    <h1>Gallery Heading</h1>
+    <div id="main-container">
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+        <div id="container">
+            <img src="./gallery.png">
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Sunt minus, nostrum laudantium, voluptas ipsam, maiores 
+        doloribus aut et at delectus id? Eos iure ipsa quaerat 
+        consectetur? Aperiam nisi incidunt commodi.
+        Non impedit eius distinctio porro iste expedita 
+        consequatur quidem totam consectetur aliquam inventore,
+         enim repudiandae aperiam vitae deleniti aspernatur aut.
+          Officia odit provident libero saepe accusantium magnam
+           quasi aperiam sequi.
+        Sit voluptatum quidem voluptatem placeat illo quos, 
+        aspernatur corrupti modi doloremque repudiandae fugit error?
+         Accusamus qui magni, quos a, repellat aut aspernatur 
+         rem optio repudiandae laboriosam sapiente id eveniet delectus?
+        Quia, perspiciatis temporibus! At dolor neque magni,
+         accusantium fugiat asperiores rem quia aut eos beatae 
+         commodi deserunt delectus officia, ipsam officiis 
+         reprehenderit autem similique culpa molestiae dicta est. 
+         Modi, amet.</p>
+</body>
+</html>
